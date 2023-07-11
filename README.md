@@ -21,9 +21,9 @@ SELECT SUM(p2.total_claim_count) AS claim_count, p2.npi, p1.nppes_provider_last_
 
 FROM prescriber AS p1
    
-   INNER JOIN prescription AS p2
+INNER JOIN prescription AS p2
     
-    ON p2.npi = p1.npi
+ON p2.npi = p1.npi
 	
  GROUP BY p1.nppes_provider_last_org_name, p1.nppes_provider_first_name, p2.npi, p1.specialty_description
 	
